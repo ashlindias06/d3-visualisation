@@ -1,0 +1,150 @@
+/* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+#map {
+    position: absolute;
+    height: 650px;
+    width: 69%;
+    margin-left: 1%;
+}
+
+#map, #graphContainer {
+    margin-top: 10%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    overflow: scroll;
+}
+
+body {
+    background-image: url('../images/road2.jpg');
+    background-size: cover;
+    color: white;
+    background-position: center;
+}
+
+#mapDtls {
+    margin-left: 1%;
+    position: absolute;
+}
+
+#mapDtls p, #graphContainerDtls p {
+    /*background-color: #f3f2ef;*/
+}
+
+#graphContainerDtls {
+    position: absolute;
+    margin-left: 71%;
+}
+
+#graphContainer {
+    position: absolute;
+    margin-left: 71%;
+    /*border: 1px solid grey;*/
+    height: 650px;
+    width: 28%;
+}
+
+.bar1 {
+    fill: #01e900;
+}
+
+.bar1:hover {
+    fill: #e9d900;
+}
+
+.bar2 {
+    fill: #00e6ec;
+}
+
+.bar2:hover {
+    fill: #ec0002;
+}
+
+.bar3 {
+    fill: #ff00cb;
+}
+
+.bar3:hover {
+    fill: #00ff06;
+}
+
+.bar4 {
+    fill: #ec0069;
+}
+
+.bar4:hover {
+    fill: #00ec6f;
+}
+
+.bar5 {
+    fill: #ec8a00;
+}
+
+.bar5:hover {
+    fill: #005dec;
+}
+
+.bar6 {
+    fill: #8eec00;
+}
+
+.bar6:hover {
+    fill: #8700ec;
+}
+
+.bar7 {
+    fill: #d8ec03;
+}
+
+.bar7:hover {
+    fill: #2500ec;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: #f9f700;
+    border: 1px solid #8f8f8f;
+    border-radius: 8px;
+    pointer-events: none;
+    color: grey;
+}
+
+#graphContainer2 {
+    display: none;
+    position: absolute;
+    margin-top: 820px;
+    margin-left: 1%;
+    margin-bottom: 2%;
+    height: 900px;
+    width: 97%;
+    box-shadow: 0px 1px 20px 0px;
+    background-color: #f3f3f3f2;
+}
+
+#graphContainer2 select {
+    width: 20%;
+    margin-top: 1%;
+    margin-left: 40%;
+    margin-right: 40%;
+    font-size: medium;
+}
+
+#graphContainer2 svg {
+    height: 45%;
+    width: 30%;
+    margin-left: 2.2%;
+    margin-top: 1%;
+}
+
+.x-axis{
+    transform: translateY(10%);
+}
+
+.svg-text{
+    transform: translateY(4%);
+}

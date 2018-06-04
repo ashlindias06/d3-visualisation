@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Road Safety Awareness</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="icon"
+          type="image/x-icon"
+          href="favicon.ico">
+    <link rel="stylesheet" href="css/datavis.css">
+</head>
+<body>
+<div style="background-color: #ffbe6ec7">
+    <h1 style="
+    font-family: cursive;
+    transform: translateX(-50%);
+    margin-left: 50%;
+">Road Safety Awareness Victoria</h1>
+</div>
+<div id="mapDtls">
+    <h4>Heat-map showing Intensity of Road Crashes in Victoria</h4>
+    <p style="width: 35%"><i>(Below visualisation shows a heat-map of road crashes over Victoria between the year 2012 -
+        2013)</i></p>
+</div>
+<div id="graphContainerDtls">
+    <h4>Number of Road Crashes per Regions</h4>
+    <p style="width: 40%"><i>(Hover on the bars for details and click to drill down)</i></p>
+</div>
+<div id="map"></div>
+
+<div id="graphContainer"></div>
+<div id="graphContainer2">
+    <select></select>
+    <svg id="svg1">
+    </svg>
+    <svg id="svg2">
+    </svg>
+    <svg id="svg3">
+    </svg>
+    <svg id="svg4">
+    </svg>
+    <svg id="svg5">
+    </svg>
+    <svg id="svg6">
+    </svg>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtl_5d2xHsZuA7q8yd4Xvgj5YeHdzL3to&libraries=visualization"></script>
+<script type="text/javascript">
+    var div = d3.select("body").append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
+    window.onload = function () {
+        stepOne();
+    }
+</script>
+<script src="js/datavis.js"></script>
+<script src="js/locationvis.js"></script>
+<script src="js/helper.js"></script>
+</body>
+</html>
