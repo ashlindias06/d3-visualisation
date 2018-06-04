@@ -8,4 +8,7 @@ Option 2:
     2. Make sure the all project files are loaded properly.
     3. Open the index.html file and Click Run.
 Option 3:
-    Code Repo available on Github https://github.com/ashlindias06/d3-visualisation.git
+    1. Using IDE such as Intellij IDEA, open the Project.
+    2. Find index.html and run the file in any browser.
+
+NOTE:Code Repo available on Github https://github.com/ashlindias06/d3-visualisation.git
